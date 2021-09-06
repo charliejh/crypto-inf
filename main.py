@@ -6,6 +6,7 @@ import client
 if __name__ == '__main__':
 
     # Setup the program to take the required arguments
+    # Note: Both symbols and currency are optional have defaults set
     parser = argparse.ArgumentParser(description="Fetch market information for Crypto currencies.")
     parser.add_argument("--symbols", type=str, nargs='+', help="The symbols of the Cryptocurrency you wish to lookup", default=["BTC", "ETH", "ADA"])
     parser.add_argument("--currency", type=str, nargs='?', help="The currency you wish to receive the prices in", default="GBP")
